@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Animation Playground</h1>
+            <p>Customize and experiment with different animations</p>
+        </header>
+
+        <section class="controls">
+            <div class="control-group">
+                <label for="animation-toggle">Enable Animations:</label>
+                <label class="switch">
+                    <input type="checkbox" id="animation-toggle" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <div class="control-group">
+                <label for="theme-color">Choose Theme Color:</label>
+                <input type="color" id="theme-color" value="#4a6fa5">
+            </div>
+
+            <div class="control-group">
+                <label for="bg-color">Choose Background:</label>
+                <input type="color" id="bg-color" value="#f8f9fa">
+            </div>
+
+            <button id="reset-btn">Reset Preferences</button>
+        </section>
+
+        <section class="animation-area">
+            <div class="animated-card" id="card1">
+                <i>👋</i>
+                <h3>Bounce Effect</h3>
+                <p>Click to see me bounce!</p>
+            </div>
+            <div class="animated-card" id="card2">
+                <i>🔄</i>
+                <h3>Shake Effect</h3>
+                <p>Click to see me shake!</p>
+            </div>
+            
+            <div class="animated-card" id="card3">
+                <i>💓</i>
+                <h3>Pulse Effect</h3>
+                <p>Click to see me pulse!</p>
+            </div>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
